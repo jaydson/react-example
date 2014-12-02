@@ -14,17 +14,35 @@ module.exports = function(grunt) {
 			}
 		},
 
+		connect: {
+			server: {
+				options: {
+					port: 9001,
+					base: './dist',
+					hostname: 'localhost'
+				}
+			}
+		},
+
+		copy: {
+			main: {
+				expand: true,
+				cwd: './src/app',
+				src: ['**'],
+				dest: 'dist'
+			}
+		},
+
 		watch: {
 			scripts: {
-				files: ['**/*.js'],
-				tasks: ['browserify'],
+				files: ['./src/**/*'],
+				tasks: ['copy','browserify'],
 				options: {
-					spawn: false,
 					livereload: true
-				},
+				}
 			}
 		}
 	});
 
-	grunt.registerTask('default', ['browserify']);
+	grunt.registerTask('default', ['copy','browserify','connect', 'watch']);
 }

@@ -22,4 +22,9 @@ var cards = [
 	title: 'Morre Chaves :(',
 	categories: ['artistas','famosos'],
 	image: 'http://p1.trrsf.com.br/image/fget/cf/865/581/38/0/300/250/images.terra.com/2014/12/01/chaves-reencontra-amigos-twitter.png'
+},
+{
+	title: 'La vem o Chaves',
+	categories: ['chaves'],
+	image: 'http://p1.trrsf.com.br/image/fget/cf/865/581/38/0/300/250/images.terra.com/2014/12/01/chaves-reencontra-amigos-twitter.png'
 }];

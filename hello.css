@@ -1,3 +1,7 @@
+body {
+	font-family: OpenSans,sans-serif;
+}
+
 .card {
 	display: block;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4);
@@ -7,4 +11,44 @@
 	position: relative;
 	overflow: hidden;
 	float: left;
+	width: 300px;
+	height: 250px;
+}
+
+.card img {
+	position: absolute;
+}
+
+.card .title {
+	background: rgb(1, 1, 0);
+	opacity: 0.8;
+	width: 100%;
+	height: 45px;
+	position: absolute;
+	color: #fff;
+	bottom: 0px;
+	padding: 6px;
+	font-size: 2em;
+	text-align: center;
+}
+
+.card .categories {
+	position: absolute;
+	z-index: 2;
+	top: -10px;
+	right: 6px;
+}
+
+.card .categories .category {
+	margin-left: 6px;
+	color: #000;
+	background: #F87307;
+	padding: 4px;
+	border-radius: 4px;
+	border: solid 1px #000;
+}
+
+.card .categories ul {
+	list-style-type: none;
+	display: inline-flex;
 }

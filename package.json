@@ -1,0 +1,26 @@
+{
+  "name": "react-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaydson/react-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaydson/react-example/issues"
+  },
+  "homepage": "https://github.com/jaydson/react-example",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.2.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-react": "^0.10.0",
+    "load-grunt-tasks": "^1.0.0"
+  }
+}

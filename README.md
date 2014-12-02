@@ -3,7 +3,7 @@ react-example
 
 I'm just trying out React and it looks awesome.  
 
-#How tu build
+#How to build
 ```shel
 npm install
 grunt watch

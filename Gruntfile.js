@@ -6,7 +6,8 @@ module.exports = function(grunt) {
 		
 		browserify: {
 			options: {
-				transform: [ require('grunt-react').browserify ]
+				transform: [ require('grunt-react').browserify ],
+				sourceMap: true
 			},
 			app: {
 				src: 'src/**/*.js',
@@ -38,6 +39,7 @@ module.exports = function(grunt) {
 				files: ['./src/**/*'],
 				tasks: ['copy','browserify'],
 				options: {
+					spawn: false,
 					livereload: true
 				}
 			}

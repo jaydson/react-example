@@ -1,6 +1,7 @@
 var Card = require('./Card');
 
 module.exports = React.createClass({
+
 	render: function() {
 		var cards = [];
 		this.props.cards.forEach(function(card) {

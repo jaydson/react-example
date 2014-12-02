@@ -1,7 +1,7 @@
 module.exports = React.createClass({
 	render: function() {
 		return (
-			<li className="category">{ this.props.text }</li>
+			<li key="1" className="category">{ this.props.text }</li>
 		);
 	}
 });

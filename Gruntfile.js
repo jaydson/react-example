@@ -20,7 +20,20 @@ module.exports = function(grunt) {
 				options: {
 					port: 9001,
 					base: './dist',
-					hostname: 'localhost'
+					hostname: '10.225.12.249'
+					/*
+					middleware: [
+						function myMiddleware(req, res, next) {
+							if (req.url.match(/\.html/)) {
+								res.writeHead(200);
+								res.write(grunt.file.read('./dist/index.html'));
+							} else {
+								console.log(req.url);
+								res.write(grunt.file.read(req.url));
+							}
+							res.end();
+						}
+					],*/
 				}
 			}
 		},

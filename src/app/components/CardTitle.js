@@ -18,7 +18,8 @@ module.exports = React.createClass({
 					document.querySelector('#viewport')
 				);
 				elem.getDOMNode().classList.add('animated', 'fadeInDownBig');
-				history.pushState({}, "page",  _this.props.data.link );
+				history.pushState({ data: _this.props.data }, "page",  _this.props.data.link );
+				window.localStorage.setItem('currentNews', JSON.stringify(_this.props.data));
 			}
 		}, 100);
 

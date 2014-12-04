@@ -1,4 +1,5 @@
 module.exports = React.createClass({
+
 	close: function() {
 		var Viewport = require('./Viewport');
 		this.getDOMNode().classList.add('animated', 'fadeOutDownBig');

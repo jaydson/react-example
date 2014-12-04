@@ -4,7 +4,7 @@ var cards = [
 	categories: ['esportes','gaucho','rs'],
 	image: 'http://p1.trrsf.com.br/image/fget/cf/0/0/0/0/300/250/images.terra.com/2014/11/30/geromelbahiaxgremioedsonruizcoofiavlancepress.jpg',
 	content: 'A direção do Grêmio já estabeleceu que para 2015 o objetivo principal vai ser reduzir significativamente a folha de pagamento do departamento de futebol, que hoje gira em torno dos R$ 8 milhões. Segundo o novo presidente, Romildo Bolzan Júnior, o clube vai gastar no máximo R$ 5 milhões por mês com a folha de pagamento para 2015.',
-	link: 'gremio-perde-em-casa.html'
+	link: '/futebol/gremio-perde-em-casa.html'
 },
 {
 	title: 'Dilma fala',

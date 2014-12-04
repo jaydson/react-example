@@ -4,16 +4,12 @@ var CardTitle = require('./CardTitle');
 
 module.exports = React.createClass({
 
-	handleClick: function() {
-		alert('alert');
-	},
-
 	render: function() {
 		return (	
-				<div onClick={ this.handleClick } className="card">
+				<div className="card">
 					<CardImg src={ this.props.image } />
 					<CategoryList list= { this.props.categories } />
-					<CardTitle text={ this.props.title } />
+					<CardTitle data={ this.props.data } text={ this.props.title } />
 					{ this.props.content }
 				</div>
 		);

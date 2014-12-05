@@ -13,7 +13,7 @@ window.onload = function() {
 	curNews = JSON.parse(window.localStorage.getItem('currentNews'));
 	if (location.href.match(/\.html/)) {
 		React.render(
-			<NewsPage content={ curNews.content } className="page" />,
+			<NewsPage title={ curNews.title } content={ curNews.content } className="page" />,
 			document.querySelector('#viewport')
 		);
 	}

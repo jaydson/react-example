@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 				options: {
 					port: 9001,
 					base: './dist',
-					hostname: '10.225.12.249'
+					hostname: 'localhost'
 					/*
 					middleware: [
 						function myMiddleware(req, res, next) {

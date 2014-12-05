@@ -14,7 +14,7 @@ module.exports = React.createClass({
 			} else {
 				clearInterval(interval);
 				var elem = React.render(
-					<NewsPage content={ _this.props.data.content } className="page" />,
+					<NewsPage title={ _this.props.data.title } content={ _this.props.data.content } className="page" />,
 					document.querySelector('#viewport')
 				);
 				elem.getDOMNode().classList.add('animated', 'fadeInDownBig');
@@ -30,7 +30,9 @@ module.exports = React.createClass({
 
 	render: function() {
 		return (
-			<a onClick={ this.handleClick } className="title">{ this.props.text }</a>
+			<div>
+				<a onClick={ this.handleClick } className="title">{ this.props.text }</a>
+			</div>
 		);
 	}
 });

@@ -16,7 +16,8 @@ module.exports = React.createClass({
 	render: function() {
 		return (	
 				<div className="page">
-					<span onClick={ this.close } className="close">X</span>
+					<h1>{ this.props.title }</h1>
+					<div onClick={ this.close } className="close">X</div>
 					{ this.props.content }
 				</div>
 		);
